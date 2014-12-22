@@ -1,0 +1,15 @@
+from selenium import webdriver
+import time
+#driver = webdriver.Firefox()
+driver = webdriver.Chrome('F:\\Cdriver\chromedriver.exe')
+driver.maximize_window()
+driver.get("http:www.facebook.com")
+driver.find_element_by_id("email").send_keys("mycoolorange@gmail.com")
+driver.find_element_by_id("pass").send_keys("CHINNU143")
+driver.find_element_by_id("loginbutton").click()
+import pytest; pytest.set_trace()
+driver.execute_script("window.scrollTo(0,2000)")
+driver.find_element_by_link_text('Account Settings').click()
+driver.find_element_by_xpath('//input[@value ="Log Out"]').click()
+#time.sleep(15)
+#driver.close()
