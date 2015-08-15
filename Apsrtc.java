@@ -24,6 +24,7 @@ public class Apsrtc {
 		{
 		driver = new FirefoxDriver();
 		driver.get("http://www.apsrtconline.in");
+		system.out.println("");
 		}
 		
 		
